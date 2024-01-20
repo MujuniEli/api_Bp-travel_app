@@ -4,16 +4,16 @@ import PlaceDetails from '../PlaceDetails/PlaceDetails'
 
 import useStlyes from "./style";
 
-const List = () => {
+const List = ({ places }) => {
     const classes = useStlyes();
     const [type, setType] = useState('restaurants');
     const [rating, setRating] = useState('');
 
-    const places = [
-        {name: 'Gomba Pork'},
-        {name: 'Fat Boyz'},
-        {name: 'Blue Nest'},
-    ];
+    // const places = [
+    //     {name: 'Gomba Pork'},
+    //     {name: 'Fat Boyz'},
+    //     {name: 'Blue Nest'},
+    // ];
 
     return (
                 <div className={classes.container}>
