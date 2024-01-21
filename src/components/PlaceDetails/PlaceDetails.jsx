@@ -13,11 +13,15 @@ const PlaceDetails = ({ place }) => {
                 <Card elevation={6}>
                     <CardMedia 
                         style={{ height: 350 }}
-                        image={place.photo ? place.photo.images.large.url : 'https://unsplash.com/photos/cooked-ribs-BS4Zeq7xDRk'}
+                        image={place.photo ? place.photo.images.large.url : 'https://asset.cloudinary.com/zona/e024139b00cd076f7815bfd61ffdd096'}
                         title={place.name}
                     />
                     <CardContent>
                         <Typography gutterBottom variant>{place.name}</Typography>
+                        <Box display="flex" justifyContent="space-between">
+                            <Rating value={Number(place.rating)} readOnly />
+                            <Typography gutterBottom variant="subtitle1">out of {place.num_reviews} reviews</Typography>
+                        </Box>
                         <Box display="flex" justifyContent="space-between">
                             <Typography variant="subtitle1">Price</Typography>
                             <Typography gutterBottom variant="subtitle1">{place.price_level}</Typography>

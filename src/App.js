@@ -32,7 +32,7 @@ const App = () => {
             <Grid container spacing={3} style={{ width: '100%' }}>
                 <Grid item xs={12} md={4}>
                   <List 
-                  places={places}
+                    places={places}
                   />
                 </Grid>
                 <Grid item xs={12} md={8}>
@@ -40,6 +40,7 @@ const App = () => {
                     setBounds={setBounds}
                     setCoordinates={setCoordinates}
                     coordinates={coordinates}
+                    places={places}
                   />
                 </Grid>
             </Grid>
