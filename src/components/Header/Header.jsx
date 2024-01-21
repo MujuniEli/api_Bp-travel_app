@@ -10,7 +10,7 @@ const Header = () => {
                 <AppBar position="static" style={{ background: '#4c97d0' }}>
                     <Toolbar className={classes.toolbar}>
                         <Typography variant="h5" className={classes.title}>
-                            Know Your Travel Sites
+                            Travel Info
                         </Typography>
                         <Box display="flex">
                             <Typography variant="h6" className={classes.title}>
